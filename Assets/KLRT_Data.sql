@@ -1,0 +1,23 @@
+-- use MOTCAPI_v2;
+-- Provider
+INSERT INTO `Provider` VALUES ('98ac2d64-17d4-11e9-a4d1-005056c00001', 'Type_Rail', 'Trans_MRT', '048', '高雄輕軌資訊系統', NULL, 'Kaohsiung Rapid Transit Corporation', NULL, NULL, '(07)337-3719', 'mtbu@kcg.gov.tw', 'http://mtbu.kcg.gov.tw/', '2017-05-12 11:25:00', 404, 'mtbu.kcg.gov.tw');
+-- 
+-- -- Line
+-- INSERT INTO `MRTLine` VALUES ('fbd4c23c-17dd-11e9-a4d1-005056c00001', '98ac2d64-17d4-11e9-a4d1-005056c00001', '', NULL, NULL, 'C', '環狀輕軌', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, b'0', b'0');
+-- 
+-- -- Station
+-- INSERT INTO `MRTStationBase` VALUES ('5abb12bc-99e8-4e79-87fb-b7a2d839b9cf', '98ac2d64-17d4-11e9-a4d1-005056c00001', 'C1', '籬仔內', NULL, 'Lizihnei', NULL, NULL, 120.3246505, 22.60462542, '', b'0', b'0');
+-- INSERT INTO `MRTStationBase` VALUES ('f4ee7d3e-48c3-4ae2-bb56-feb5c2c10777', '98ac2d64-17d4-11e9-a4d1-005056c00001', 'C2', '凱旋瑞田', NULL, 'Kaisyuan Rueitian', NULL, NULL, 120.3197994, 22.59953285, '', b'0', b'0');
+-- INSERT INTO `MRTStationBase` VALUES ('865072a8-fa2b-4dc3-8980-8c5e725a6dbe', '98ac2d64-17d4-11e9-a4d1-005056c00001', 'C3', '前鎮之星', NULL, 'Cianjhen Star', NULL, NULL, 120.3153684, 22.5955033, '', b'0', b'0');
+-- INSERT INTO `MRTStationBase` VALUES ('45faf560-93e8-4164-8335-59ef244e814b', '98ac2d64-17d4-11e9-a4d1-005056c00001', 'C4', '凱旋中華', NULL, 'Kaisyuan Jhonghua', NULL, NULL, 120.3105168, 22.59365581, '', b'0', b'0');
+-- INSERT INTO `MRTStationBase` VALUES ('5ad177d4-b13e-4db7-8364-2c8f7f87db0b', '98ac2d64-17d4-11e9-a4d1-005056c00001', 'C5', '夢時代', NULL, 'Dream Mall', NULL, NULL, 120.305004, 22.59488605, '', b'0', b'0');
+-- INSERT INTO `MRTStationBase` VALUES ('89986568-a8c0-41c4-b68d-91219d785fb4', '98ac2d64-17d4-11e9-a4d1-005056c00001', 'C6', '經貿園區', NULL, 'Commerce and Trade Park', NULL, NULL, 120.3026595, 22.60096112, '', b'0', b'0');
+-- INSERT INTO `MRTStationBase` VALUES ('19b04866-8106-43cc-b0db-53b10dad0a4b', '98ac2d64-17d4-11e9-a4d1-005056c00001', 'C7', '軟體園區', NULL, 'Software Technology Park', NULL, NULL, 120.3008317, 22.60568425, '', b'0', b'0');
+-- INSERT INTO `MRTStationBase` VALUES ('f8a2b3c4-9137-45c6-9407-4895081aa2bb', '98ac2d64-17d4-11e9-a4d1-005056c00001', 'C8', '高雄展覽館', NULL, 'Kaohsiung Exhibition Center', NULL, NULL, 120.2980221, 22.6101334, '', b'0', b'0');
+-- INSERT INTO `MRTStationBase` VALUES ('0cd187cc-752d-4fc3-8738-51e1ea93e8d6', '98ac2d64-17d4-11e9-a4d1-005056c00001', 'C9', '旅運中心', NULL, 'Cruise Terminal', NULL, NULL, 120.2934382, 22.61164344, '', b'0', b'0');
+-- INSERT INTO `MRTStationBase` VALUES ('4cbbc14a-08e2-448c-ac19-406e47d07ed0', '98ac2d64-17d4-11e9-a4d1-005056c00001', 'C10', '光榮碼頭', NULL, 'Glory Pier', NULL, NULL, 120.2932342, 22.61680492, '', b'0', b'0');
+-- INSERT INTO `MRTStationBase` VALUES ('4ea38450-3fce-4ac7-b4b5-212a3d65c3d5', '98ac2d64-17d4-11e9-a4d1-005056c00001', 'C11', '真愛碼頭', NULL, 'Love Pier', NULL, NULL, 120.2894657, 22.61931532, '', b'0', b'0');
+-- INSERT INTO `MRTStationBase` VALUES ('8a1ecc0f-29a4-4b85-9e3e-c6a1c4336d59', '98ac2d64-17d4-11e9-a4d1-005056c00001', 'C12', '駁二大義', NULL, 'Dayi Pier-2', NULL, NULL, 120.284204, 22.61856162, '', b'0', b'0');
+-- INSERT INTO `MRTStationBase` VALUES ('76ce3313-49f6-49b6-9b2a-3fc6f72cd683', '98ac2d64-17d4-11e9-a4d1-005056c00001', 'C13', '駁二蓬萊', NULL, 'Penglai Pier-2', NULL, NULL, 120.2799235, 22.6204995, '', b'0', b'0');
+-- INSERT INTO `MRTStationBase` VALUES ('824cdfce-49ab-4775-bc63-4d1eea6a3f57', '98ac2d64-17d4-11e9-a4d1-005056c00001', 'C14', '哈瑪星', NULL, 'Hamasen', NULL, NULL, 120.2758491, 22.62161748, '', b'0', b'0');
+-- 
