@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using KLRT.Constants;
 using KLRT.Enums;
 using OfficeOpenXml;
 
@@ -37,7 +38,7 @@ namespace KLRT.Services
                 a.PK_MRTStationExit,
                 KLRTConstants.FK_Provider,
                 a.FK_MRTStationBase,
-                a.ExitID,
+                ExitID = a.ExitID ?? string.Empty,
                 a.NameZh_tw,
                 a.NameEn_us,
                 a.LocationDescription,

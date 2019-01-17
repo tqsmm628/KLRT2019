@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using KLRT.Constants;
 using KLRT.Enums;
 using OfficeOpenXml;
 
@@ -40,7 +41,7 @@ namespace KLRT.Services
                 KLRTConstants.FK_Provider,
                 a.FK_MRTLine,
                 a.FK_MRTStationBase,
-                a.Distance,
+                Distance = a.Distance ?? 0,
                 a.Sequence
             })));
     }
