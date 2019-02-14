@@ -43,6 +43,7 @@ namespace KLRT.Services
                 a.FK_MRTLine,
                 a.FK_MRTStationBase,
                 a.FK_MRTStationBase_End,
+                FK_MRTTrainType = KLRTConstants.FK_MRTTrainType_普通車,
                 a.TripHeadSign,
                 a.FirstTrainTime,
                 a.LastTrainTime,

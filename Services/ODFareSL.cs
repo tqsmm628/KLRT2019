@@ -32,7 +32,7 @@ namespace KLRT.Services
                         FK_MRTStationBase_Destination = StationMap[(string)cells[row, 3].Value],
                         FK_MRTTicketType = TicketTypeMap[(int)(double)cells[row, 5].Value],
                         FK_MRTFareClass = FareClassMap[(int)(double)cells[row, 6].Value],
-                        FK_MRTTrainType = KLRTConstants.FK_TrainType_普通車
+                        FK_MRTTrainType = KLRTConstants.FK_MRTTrainType_普通車
                     };
                 }
             }

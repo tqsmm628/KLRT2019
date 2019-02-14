@@ -53,6 +53,7 @@ namespace KLRT.Services
             var TicketTypeMap = GetTicketTypeMap();
             var FareClassMap = GetFareClassMap();
             
+            
             var Lines = LineSL.Parse(f("Line")).ToList();
             var LineMap = Lines.ToDictionary(o => o.LineID, o => o.PK_MRTLine);
             var Stations = StationSL.Parse(f("Station")).ToList();
@@ -61,7 +62,8 @@ namespace KLRT.Services
             var ODFares = ODFareSL.Parse(f("ODFare"), StationMap, TicketTypeMap, FareClassMap).ToList();
             var StationExits = StationExitSL.Parse(f("StationExitList"), StationMap).ToList();
             var StationOfLines = StationOfLineSL.Parse(f("StationOfLine"), LineMap, StationMap).ToList();
-            
+
+            var VersionSql = VersionSL.GenerateSql();
             var LineSql = LineSL.GenerateSql(Lines);
             var StationSql = StationSL.GenerateSql(Stations);
             var FirstLastTimetableSql = FirstLastTimetableSL.GenerateSql(FirstLastTimetables);
@@ -71,6 +73,7 @@ namespace KLRT.Services
 
             return string.Join(Environment.NewLine + Environment.NewLine, new string[]
             {
+                VersionSql,
                 LineSql,
                 StationSql,
                 FirstLastTimetableSql,
@@ -115,6 +118,9 @@ namespace KLRT.Services
                 {7, Guid.Parse("e7f7f43d-28ff-11e7-b355-00155d63e605")},
                 {8, Guid.Parse("e7f7f4d9-28ff-11e7-b355-00155d63e605")},
             };
+
+        public static string GenerateBaseServiceDetailDeleteSql() => string.Join(Environment.NewLine,
+            ServiceDetailValues.Select(a => Delete("BaseServiceDetail", $"ID = '{a.ID}'")));
 
         public static string GenerateBaseServiceDetailInsertSql() => string.Join(Environment.NewLine, 
             ServiceDetailValues.Select(a => Insert("BaseServiceDetail", new

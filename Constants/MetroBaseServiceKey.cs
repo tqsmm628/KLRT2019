@@ -14,7 +14,7 @@ namespace KLRT.Constants
         public static readonly Guid StationOfLine = Guid.Parse("036cfe64-2cf2-11e7-b355-00155d63e605");
         
         public static string GenerateKeySql() 
-            => GenerateKeySql(new string[] { "Line", "Station", "FirstLastTimetable", "ODFare", "StationExit", "StationOfLine" });
+            => GenerateKeySql(new [] { "Line", "Station", "FirstLastTimetable", "ODFare", "StationExit", "StationOfLine" });
         
         private static string GenerateKeySql(IEnumerable<string> urlPart) => string.Join($" union all {Environment.NewLine}", 
             urlPart.Select(u => $@"(select concat('public static readonly Guid {u} = Guid.Parse(""', PK_BaseService, '"");')" +

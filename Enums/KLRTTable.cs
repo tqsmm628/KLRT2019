@@ -2,6 +2,7 @@ namespace KLRT.Enums
 {
     public enum KLRTTable
     {
+        MRTVersion,
         MRTLine,
         MRTStationBase,
         MRTFirstLastTimetable,

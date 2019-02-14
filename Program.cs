@@ -9,8 +9,10 @@ namespace KLRT
         private static void Main(string[] args)
         {
 //            Dump(SqlSL.GetCountSql());
-            Dump(SqlSL.GetInsertSql());
+//            Dump(SqlSL.GetInsertSql());
 //            Dump(SqlSL.GetDeleteSql());
+            Dump(SqlSL.GenerateBaseServiceDetailInsertSql());
+//            Dump(SqlSL.GenerateBaseServiceDetailDeleteSql());
         }
 
         

@@ -31,7 +31,7 @@ namespace KLRT.Services
             {
                 a.PK_MRTLine,
                 KLRTConstants.FK_Provider,
-                FK_MRTNetwork = "",
+                FK_MRTNetwork = Guid.NewGuid(),
                 a.LineID,
                 a.NameZh_tw,
                 IsBranch = false
